@@ -1,4 +1,4 @@
-# nerdgraph-get-managed-accounts
+# NerdGraph: Get Active & Canceled Managed Accounts
 
 ## Overview
 `nerdgraph-get-managed-accounts` is a Python application designed to interact with the New Relic GraphQL API. It retrieves account data and stores it in CSV files for further analysis and utilization.
