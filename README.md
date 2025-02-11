@@ -1,7 +1,7 @@
 # nerdgraph-get-managed-accounts
 
 ## Overview
-`nerdgraph-get-managed-accounts` is a Python-based application designed to interact with the New Relic GraphQL API. It retrieves account data and processes it into CSV files for further analysis and utilization.
+`nerdgraph-get-managed-accounts` is a Python application designed to interact with the New Relic GraphQL API. It retrieves account data and stores it in CSV files for further analysis and utilization.
 
 ## Features
 - Fetches account data from New Relic using NerdGraph (GraphQL).
@@ -10,29 +10,32 @@
 
 ## Requirements
 - Python 3.12+
-- `pip` for managing Python packages
+- `Poetry` for dependency management
 
 ## Installation
-1. Clone the repository:
+1. Install Poetry if you haven't already:
+   ```sh
+    # On Mac with Homebrew
+    brew install poetry
+
+    # Or using the official installer
+    curl -sSL https://install.python-poetry.org | python3 -
+    ```
+   
+2. Clone the repository:
     ```sh
     git clone https://github.com/brett-larson/nerdgraph-get-managed-accounts.git
     cd nerdgraph-get_managed_accounts
     ```
 
-2. Create and activate a virtual environment:
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. Install the required packages:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-4. Create a `.env` file in the root directory and add your New Relic API key:
+3. Create a `.env` file in the root directory and add your New Relic API key:
     ```env
     NEW_RELIC_API_KEY=your_api_key_here
+    ```
+
+4. Install dependencies using Poetry:
+    ```sh
+    poetry install
     ```
 
 ## Usage
