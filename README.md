@@ -39,18 +39,18 @@
     ```
 
 ## Usage
-1. Run the main script:
+1. Run the application using Poetry:
     ```sh
-    python src/main.py
+    poetry run get-accounts
     ```
 
 2. The application will fetch the account data and write it to a CSV file named `active_accounts.csv` or `canceled_accounts.csv` in the `src/data/csv` directory.
 
 ## Project Structure
-- `src/api/client.py`: Contains the client for interacting with the New Relic GraphQL API.
-- `src/data/csv_handlers.py`: Contains classes for handling CSV data.
-- `src/main.py`: Main script to execute the core logic of the application.
-- `src/utils.py`: Utility functions, including the logger setup.
+- `src/get_managed_accounts/api/client.py`: Contains the client for interacting with the New Relic GraphQL API.
+- `src/get_managed_accounts/data/csv_handlers.py`: Contains classes for handling CSV data.
+- `src/get_managed_accounts/main.py`: Main script to execute the core logic of the application.
+- `src/get_managed_accounts/utils.py`: Utility functions, including the logger setup.
 
 ## Logging
 The application uses a logger to provide information about its execution. Logs are printed to the console.
