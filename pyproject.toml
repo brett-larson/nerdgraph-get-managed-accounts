@@ -4,18 +4,19 @@ version = "0.1.0"
 description = "A project to get managed accounts using NerdGraph"
 authors = ["Brett Larson <larson.brett.s@gmail.com>"]
 license = "MIT"
+packages = [
+    { include = "get-managed-accounts", from = "src" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 requests = "^2.32.3"
 python-dotenv = "^1.0.1"
 
-[tool.poetry]
-# ... your existing metadata ...
-packages = [
-    { include = "get-managed-accounts", from = "src" }
-]
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+# Add this if you want users to be able to run your program directly
+[tool.poetry.scripts]
+get-managed-accounts = "get-managed-accounts.main:main"
