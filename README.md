@@ -16,7 +16,7 @@
 1. Clone the repository:
     ```sh
     git clone https://github.com/brett-larson/nerdgraph-get-managed-accounts.git
-    cd nerdgraph-get-managed-accounts
+    cd nerdgraph-get_managed_accounts
     ```
 
 2. Create and activate a virtual environment:

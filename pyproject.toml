@@ -5,7 +5,7 @@ description = "A project to get managed accounts using NerdGraph"
 authors = ["Brett Larson <larson.brett.s@gmail.com>"]
 license = "MIT"
 packages = [
-    { include = "get-managed-accounts", from = "src" }
+    { include = "get_managed_accounts", from = "src" }
 ]
 
 [tool.poetry.dependencies]
