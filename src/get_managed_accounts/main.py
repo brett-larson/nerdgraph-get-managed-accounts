@@ -1,11 +1,4 @@
 # Imports
-# from dotenv import load_dotenv
-# from api import execute_query, RateLimiter
-# from api.queries import GET_MANAGED_ACCOUNTS as get
-# from data import NewRelicAccountsHandler
-# from utils import setup_logger
-
-# Imports
 from dotenv import load_dotenv
 from get_managed_accounts.api import execute_query, RateLimiter
 from get_managed_accounts.api.queries import GET_MANAGED_ACCOUNTS as get

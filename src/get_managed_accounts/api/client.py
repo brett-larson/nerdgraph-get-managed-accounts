@@ -5,7 +5,7 @@
 from typing import Optional
 import requests
 import os
-from src.utils import setup_logger
+from get_managed_accounts.utils import setup_logger
 
 # Create logger for the module
 logger = setup_logger(__name__)
